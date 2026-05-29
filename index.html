@@ -124,7 +124,8 @@
         Increment Counters), verbose logging and pleasant, useful, documentation. I tend to hive off model recall (i.e,
         advanced analytics and machine learning) to microservices, although I am sensitive to microservice sprawl.</p>
 
-    <p>In the front end, I work with <code>Alpine.js</code> and <code>Daisy Tailwind CSS</code>, as might be expected given
+    <p>In the front end, I work with <code>Alpine.js</code> and <code>Daisy Tailwind CSS</code>, as might be expected
+        given
         the languages I declare myself to be comfortable with. For persistence, I typically use <code>PostgreSQL</code>
         (i.e, configuration and serialized transactions), <code>Redis</code> (or
         <code>ValKey</code>) for caching and idempotency, <code>RabbitMQ</code> for RPC messaging, or <code>Kafka</code>
@@ -133,8 +134,18 @@
     <p>I enjoy working with <code>R</code>, though I generally use it only for advanced analytics and training portable
         models, rather than for general-purpose programming.</p>
 
-    <p>I'm a proponent of containerisation, and writing Dockerfiles and Compose setups is second nature. Being decent
-        with Git is implicitly understood.</p>
+    <p>I'm a proponent of containerisation, and writing Dockerfiles and Compose setups is second nature. I favour Docker
+        Swarm over Kubernetes — a position I appreciate requires defending. When you are personally responsible for the
+        Total Cost of Ownership (TCO) of a production system, or have
+        the thankless task of keeping something at five nines, you think very differently about operational complexity.
+        Kubernetes is a remarkable piece of engineering that I have tremendous respect for, and would not hesitate to
+        recommend where the organisational scale justifies it. For the kind of fully active, highly available
+        architectures I tend to build — stretched across primary and disaster recovery zones, with etcd quorums, Patroni
+        managed PostgreSQL clusters, Redis Sentinel failover, and HAProxy routing — Docker Swarm delivers everything
+        that matters with a fraction of the cognitive and operational overhead. The right tool is the one you can defend
+        at three in the morning when something has gone wrong.</p>
+
+    <p>Being decent enough with Git is implicitly understood.</p>
 
     <h2>My preferences in Advanced Analytics</h2>
 
@@ -224,10 +235,11 @@
 
     <img src="a-bedraggled-cat-as-requested.gif" alt="My name is Jeff.">
 
-    <p>I am fat and old so no point in pretending that fifteen year headshot of me in a tie is my actual life being lived.
-    As someone who freely admits that most of the people I work with are half my age and twice as smart, I say: More
-    power to you, you probably only need me to stop you doing the daftest of things that might not be obvious, and a
-    cynic might say was there to trap you.</p>
+    <p>I am fat and old so no point in pretending that fifteen year headshot of me in a tie is my actual life being
+        lived.
+        As someone who freely admits that most of the people I work with are half my age and twice as smart, I say: More
+        power to you, you probably only need me to stop you doing the daftest of things that might not be obvious, and a
+        cynic might say was there to trap you.</p>
 
     <div class="contact">
         <h2>Contact</h2>
